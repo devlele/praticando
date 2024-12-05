@@ -1,0 +1,10 @@
+renda = float(input("Digite o valor da sua renda mensal: "))
+parcela = float(input("Digite o valor da parcela desejada: "))
+
+if renda > 2000:
+    if parcela < renda * 0.3:
+        print("Emprestimo aprovado!")
+    else:
+        print("Emprestimo negado: parcela acima de 30% da renda")
+else:
+    print("Emprestimo negado: renda abaixo de R$2000,00")
